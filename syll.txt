@@ -1,0 +1,31 @@
+QW4HD DQCRG HM64M 6GJRK 8K83T
+UNIT I
+Introduction: Mobile Communications, Mobile Computing – Paradigm, Promises/Novel Applications and
+Impediments and Architecture; Mobile and Handheld Devices, Limitations of Mobile and Handheld
+Devices.
+GSM – Services, System Architecture, Radio Interfaces, Protocols, Localization, Calling, Handover,
+Security, New Data Services, GPRS.
+UNIT –II
+(Wireless) Medium Access Control (MAC) : Motivation for a specialized MAC (Hidden and exposed
+terminals, Near and far terminals), SDMA, FDMA, TDMA, CDMA, Wireless LAN/(IEEE 802.11)
+UNIT –III
+Mobile Network Layer : IP and Mobile IP Network Layers, Packet Delivery and Handover Management,
+Location Management, Registration, Tunneling and Encapsulation, Route Optimization, DHCP.
+UNIT –IV
+Mobile Transport Layer : Conventional TCP/IP Protocols, Indirect TCP, Snooping TCP, Mobile TCP,
+Other Transport Layer Protocols for Mobile Networks.
+Database Issues : Database Hoarding & Caching Techniques, Client-Server Computing & Adaptation,
+Transactional Models, Query processing, Data Recovery Process & QoS Issues.
+UNIT V
+Data Dissemination and Synchronization : Communications Asymmetry, Classification of Data Delivery
+Mechanisms, Data Dissemination, Broadcast Models, Selective Tuning and Indexing Methods, Data
+Synchronization – Introduction, Software, and Protocols.
+UNIT VI
+Mobile Ad hoc Networks (MANETs) : Introduction, Applications & Challenges of a MANET, Routing,
+Classification of
+Routing Algorithms, Algorithms such as DSR, AODV, DSDV, etc. , Mobile Agents, Service Discovery.
+Protocols and Platforms for Mobile Computing : WAP, Bluetooth, XML, J2ME, JavaCard, PalmOS,
+Windows CE, SymbianOS, Linux for Mobile Devices,Android.
+Text Books:
+1. Jochen Schiller, “Mobile Communications”, Addison-Wesley, Second Edition, 2009.
+2. Raj Kamal, “Mobile Computing”, Oxford University Press, 2007, ISBN: 0195686772

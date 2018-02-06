@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "759963205215",
+    "firebase_url": "https://devika-87a00.firebaseio.com",
+    "project_id": "devika-87a00",
+    "storage_bucket": "devika-87a00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759963205215:android:7280f002a2fcb94b",
+        "android_client_info": {
+          "package_name": "com.example.admin.devika"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759963205215-mnm54voq1cbp63qkv4732rqj69qoeinl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZbVz9Hi0vWl_GBsD1OU2BgkoV4jx9HPs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
