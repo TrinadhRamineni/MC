@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button changePassword;
     private Button sendEmail;
     private Button remove;
-
+    private Button signOut;
     private EditText oldEmail, newEmail, password, newPassword;
     private ProgressBar progressBar;
     private FirebaseAuth.AuthStateListener authListener;
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         changePassword = (Button) findViewById(R.id.changePass);
         sendEmail = (Button) findViewById(R.id.send);
         remove = (Button) findViewById(R.id.remove);
-        Button signOut = (Button) findViewById(R.id.sign_out);
+        signOut = (Button) findViewById(R.id.sign_out);
 
         oldEmail = (EditText) findViewById(R.id.old_email);
         newEmail = (EditText) findViewById(R.id.new_email);
