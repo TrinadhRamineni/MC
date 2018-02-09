@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.devika.CalActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_alignLeft="@+id/tvMen"
+        android:layout_alignStart="@+id/tvMen"
+        android:layout_alignTop="@+id/etWeight"
+        android:text="Weight"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_above="@+id/etFeet"
+        android:layout_alignLeft="@+id/etFeet"
+        android:layout_alignStart="@+id/etFeet"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="kgs"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/etFeet"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/etFeet"
+        android:layout_toStartOf="@+id/etFeet"
+        android:text="Height"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="113dp" />
+
+    <EditText
+        android:id="@+id/etFeet"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etInches"
+        android:layout_toLeftOf="@+id/etInches"
+        android:layout_toStartOf="@+id/etInches"
+        android:ems="10"
+        android:hint="feet"
+        android:inputType="number"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    <EditText
+        android:id="@+id/etInches"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etAge"
+        android:layout_alignEnd="@+id/etAge"
+        android:layout_alignRight="@+id/etAge"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="inches"
+        android:inputType="number"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/etAge"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:text="Age"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCalcutate"
+        android:layout_alignEnd="@+id/tvMen"
+        android:layout_alignRight="@+id/tvMen"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="years"
+        android:inputType="number"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <Button
+        android:id="@+id/btnCalcutate"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvMen"
+        android:layout_alignEnd="@+id/tvWomen"
+        android:layout_alignRight="@+id/tvWomen"
+        android:layout_marginBottom="17dp"
+        android:text="Calculate"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <TextView
+        android:id="@+id/tvMen"
+        android:layout_width="317dp"
+        android:layout_height="43dp"
+        android:layout_above="@+id/tvWomen"
+        android:layout_alignLeft="@+id/tvWomen"
+        android:layout_alignStart="@+id/tvWomen"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <TextView
+        android:id="@+id/tvWomen"
+        android:layout_width="319dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/etWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:text="Calorie Calulator"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

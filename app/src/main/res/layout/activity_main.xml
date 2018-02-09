@@ -126,6 +126,17 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/btnMenuActivity"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/holo_green_light"
+            android:text="GoTo Menu"
+            android:textColor="-"
+            android:textStyle="bold" />
+
+        <Button
             android:id="@+id/change_email_button"
             style="?android:textAppearanceSmall"
             android:layout_width="match_parent"
