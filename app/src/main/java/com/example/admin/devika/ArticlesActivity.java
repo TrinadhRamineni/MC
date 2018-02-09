@@ -24,9 +24,9 @@ public class ArticlesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_articles);
-        articles_text = (TextView) findViewById(R.id.taArticles);
-        previous = (Button) findViewById(R.id.btnPrevious);
-        next = (Button) findViewById(R.id.btnNext);
+        articles_text = (TextView) findViewById(R.id.taArticle);
+        previous = (Button) findViewById(R.id.btnPre);
+        next = (Button) findViewById(R.id.btnNxt);
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReferenceFromUrl("https://devika-87a00.firebaseio.com/articles/1");
