@@ -29,4 +29,17 @@
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
     <string name="btn_menu">Go To Menu</string>
+    <string name="choose_file">Choose file</string>
+    <string name="enter_file_name">Enter file name</string>
+    <string name="todo">TODO</string>
+    <string name="upload">UPLOAD</string>
+    <string name="show_uploads">Show Uploads</string>
+    <string name="name">Name</string>
+    <string name="todo1">TODO</string>
+    <string name="profile">profile</string>
+    <string name="calories_burnt">Calories Burnt</string>
+    <string name="articles">Articles</string>
+    <string name="remainders">Remainders</string>
+    <string name="location_sharing">Location Sharing</string>
+    <string name="files_upload">Files Upload</string>
 </resources>

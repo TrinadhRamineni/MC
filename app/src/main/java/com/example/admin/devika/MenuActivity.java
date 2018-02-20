@@ -22,7 +22,7 @@ public class MenuActivity extends AppCompatActivity {
         Button articles =  findViewById(R.id.btnArticles);
         Button remainders =  findViewById(R.id.btnRemainders);
         Button location_sharing = findViewById(R.id.btnLocation);
-        Button reports_sharing =  findViewById(R.id.btnReport);
+        Button upload =  findViewById(R.id.btnUpload);
         //get firebase auth instance
         auth = FirebaseAuth.getInstance();
         //get current user
@@ -40,6 +40,12 @@ public class MenuActivity extends AppCompatActivity {
                 }
             }
         };
+        upload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MenuActivity.this,FileUploadActivity.class));
+            }
+        });
         remainders.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,5 +75,6 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
     }
 }
