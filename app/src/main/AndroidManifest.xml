@@ -52,7 +52,9 @@
         <receiver android:name=".AlarmReceiver" />
 
         <activity android:name=".RelativeSignup" />
-        <activity android:name=".FileUploadActivity"></activity>
+        <activity android:name=".FileUploadActivity" />
+        <activity android:name=".ImagesActivity" />
+
     </application>
 
 </manifest>
