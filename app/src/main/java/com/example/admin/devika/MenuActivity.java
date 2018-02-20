@@ -1,5 +1,4 @@
 package com.example.admin.devika;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,27 +8,23 @@ import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
 public class MenuActivity extends AppCompatActivity {
-    private Button profile,calories,articles,remainders,location_sharing,reports_sharing;
-//    private FirebaseAuth auth;
+    //    private FirebaseAuth auth;
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        profile = (Button) findViewById(R.id.btnProfile);
-        calories = (Button) findViewById(R.id.btnCalorie);
-        articles = (Button) findViewById(R.id.btnArticles);
-        remainders = (Button) findViewById(R.id.btnRemainders);
-        location_sharing = (Button) findViewById(R.id.btnLocation);
-        reports_sharing = (Button) findViewById(R.id.btnReport);
-
+        Button profile;
+        profile = findViewById(R.id.btnProfile);
+        Button calories = findViewById(R.id.btnCalorie);
+        Button articles =  findViewById(R.id.btnArticles);
+        Button remainders =  findViewById(R.id.btnRemainders);
+        Button location_sharing = findViewById(R.id.btnLocation);
+        Button reports_sharing =  findViewById(R.id.btnReport);
         //get firebase auth instance
         auth = FirebaseAuth.getInstance();
-
         //get current user
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -45,8 +40,13 @@ public class MenuActivity extends AppCompatActivity {
                 }
             }
         };
-
-
+        remainders.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuActivity.this,Alarm121Activity.class);
+                startActivity(intent);
+            }
+        });
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,7 +69,5 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
     }
-
 }
