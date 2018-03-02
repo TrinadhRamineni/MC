@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "759963205215-041t2e7j1ff8tjioeaup4uf0qsn7ooku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.devika",
+            "certificate_hash": "31e78cab490727b2fa0b41a4ffcd70b95020a9ad"
+          }
+        },
+        {
           "client_id": "759963205215-mnm54voq1cbp63qkv4732rqj69qoeinl.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759963205215-mnm54voq1cbp63qkv4732rqj69qoeinl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

@@ -1,9 +1,4 @@
 package com.example.admin.devika;
-
-/**
- * Created by admin on 2/19/2018.
- */
-
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
@@ -13,10 +8,6 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Handler;
 import android.support.v4.content.WakefulBroadcastReceiver;
-
-/**
- * Created by Tatson on 05-Apr-17.
- */
 
 public class AlarmReceiver extends WakefulBroadcastReceiver {
 

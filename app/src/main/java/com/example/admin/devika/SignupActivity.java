@@ -26,7 +26,7 @@ public class SignupActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private FirebaseDatabase database;
     private DatabaseReference myRef;
-
+    String email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +39,7 @@ public class SignupActivity extends AppCompatActivity {
         btnSignIn = (Button) findViewById(R.id.sign_in_button);
         btnSignUp = (Button) findViewById(R.id.sign_up_button);
         inputEmail = (EditText) findViewById(R.id.email);
-        inputNumber = (EditText) findViewById(R.id.pnumber);
+       // inputNumber = (EditText) findViewById(R.id.pnumber);
         inputPassword = (EditText) findViewById(R.id.password);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         btnResetPassword = (Button) findViewById(R.id.btn_reset_password);
@@ -62,9 +62,9 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String email = inputEmail.getText().toString().trim();
+                 email = inputEmail.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
-                String number = inputNumber.getText().toString().trim();
+
 
                 if (TextUtils.isEmpty(email)) {
                     Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
@@ -75,19 +75,19 @@ public class SignupActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if (TextUtils.isEmpty(number)) {
+          /*      if (TextUtils.isEmpty(number)) {
                     Toast.makeText(getApplicationContext(), "Enter Relative Number!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if (password.length() < 6) {
+   */             if (password.length() < 6) {
                     Toast.makeText(getApplicationContext(), "Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if (number.length() < 10) {
+        /*        if (number.length() < 10) {
                     Toast.makeText(getApplicationContext(), "Invalid Number!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
+*/
                 progressBar.setVisibility(View.VISIBLE);
                 //create user
                 auth.createUserWithEmailAndPassword(email, password)
@@ -103,8 +103,9 @@ public class SignupActivity extends AppCompatActivity {
                                     Toast.makeText(SignupActivity.this, "Authentication failed." + task.getException(),
                                             Toast.LENGTH_SHORT).show();
                                 } else {
-
-                                    startActivity(new Intent(SignupActivity.this, MainActivity.class));
+                                    Bundle b = new Bundle();
+                                    b.putString("email",email);
+                                    startActivity(new Intent(SignupActivity.this, RelativePhNum.class).putExtras(b));
                                     finish();
                                 }
                             }

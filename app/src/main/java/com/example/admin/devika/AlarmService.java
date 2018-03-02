@@ -8,10 +8,6 @@ import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
-/**
- * Created by Tatson on 05-Apr-17.
- */
-
 public class AlarmService extends IntentService {
     private NotificationManager alarmNotificationManager;
 

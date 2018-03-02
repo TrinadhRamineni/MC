@@ -40,12 +40,13 @@ public class MenuActivity extends AppCompatActivity {
                 }
             }
         };
-        upload.setOnClickListener(new View.OnClickListener() {
+       upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MenuActivity.this,FileUploadActivity.class));
             }
         });
+
         remainders.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,6 +76,11 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
+        location_sharing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this,PulseDummy.class));
+            }
+        });
     }
 }
