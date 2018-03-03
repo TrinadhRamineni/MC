@@ -62,7 +62,8 @@
         <activity android:name=".Pulserate" />
         <activity android:name=".PulseRate" />
         <activity android:name=".PulseDummy" />
-        <activity android:name=".RelativePhNum"></activity>
+        <activity android:name=".RelativePhNum" />
+        <activity android:name=".RelativeLogin"></activity>
     </application>
 
 </manifest>
