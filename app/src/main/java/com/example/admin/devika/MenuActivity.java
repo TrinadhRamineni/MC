@@ -23,6 +23,7 @@ public class MenuActivity extends AppCompatActivity {
         Button remainders =  findViewById(R.id.btnRemainders);
         Button location_sharing = findViewById(R.id.btnLocation);
         Button upload =  findViewById(R.id.btnUpload);
+        Button pulse = findViewById(R.id.pulse);
         //get firebase auth instance
         auth = FirebaseAuth.getInstance();
         //get current user
@@ -79,7 +80,13 @@ public class MenuActivity extends AppCompatActivity {
         location_sharing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MenuActivity.this,PulseDummy.class));
+                startActivity(new Intent(MenuActivity.this,MapsActivity.class));
+            }
+        });
+        pulse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this,PulseRate.class));
             }
         });
     }

@@ -42,4 +42,5 @@
     <string name="remainders">Remainders</string>
     <string name="location_sharing">Location Sharing</string>
     <string name="files_upload">Files Upload</string>
+    <string name="pulserate">PulseRate</string>
 </resources>

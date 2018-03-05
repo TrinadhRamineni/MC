@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private FirebaseUser currentFirebaseUser;
     private ProgressBar progressBar;
-    private Button btnSignup, btnLogin, btnReset, btnRelative,btnsignuprelative;
+    private Button btnSignup, btnLogin, btnReset, btnRelative;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,16 +48,9 @@ public class LoginActivity extends AppCompatActivity {
         btnSignup =  findViewById(R.id.btn_signup);
         btnLogin = findViewById(R.id.btn_login);
         btnReset = findViewById(R.id.btn_reset_password);
-        btnRelative = findViewById(R.id.btn_relative);
-        btnsignuprelative = findViewById(R.id.signuprelative);
+
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
-        btnsignuprelative.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this,RelativeLogin.class));
-            }
-        });
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

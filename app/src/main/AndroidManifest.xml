@@ -59,11 +59,8 @@
         <activity android:name=".FileUploadActivity" />
         <activity android:name=".MapsActivity" />
         <activity android:name=".ImagesActivity" />
-        <activity android:name=".Pulserate" />
         <activity android:name=".PulseRate" />
-        <activity android:name=".PulseDummy" />
         <activity android:name=".RelativePhNum" />
-        <activity android:name=".RelativeLogin"></activity>
     </application>
 
 </manifest>

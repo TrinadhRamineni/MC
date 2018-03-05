@@ -77,4 +77,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLocation" />
 
+    <Button
+        android:id="@+id/pulse"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pulserate"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="310dp"
+        tools:ignore="MissingConstraints" />
+
+
 </android.support.constraint.ConstraintLayout>
